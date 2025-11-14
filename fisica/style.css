@@ -1,0 +1,115 @@
+:root{
+--bg: #ffffff; /* branco */
+--navy: #0b2545; /* azul marinho */
+--accent: #0b2545;
+--max-width: 1000px;
+}
+
+
+/* Basic reset */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;padding:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{background:var(--bg);color:var(--navy);line-height:1.6}
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+
+
+/* Fixed logo in top-right */
+.logo-fixed{position:fixed;top:12px;right:12px;z-index:999;display:flex;align-items:center;justify-content:center;padding:6px}
+.logo-fixed img{width:64px;height:64px;object-fit:contain;display:block}
+
+
+.site-header{padding:28px 0 6px}
+.site-header h1{margin:0;font-size:2rem;color:var(--navy)}
+.subtitle{margin-top:6px;color:var(--navy);opacity:0.9}
+
+
+.lead{font-weight:600}
+h2{font-size:1.4rem;margin-top:12px}
+h3{font-size:1.1rem;margin-top:10px}
+
+
+.diagram{width:100%;height:auto;border:1px solid rgba(11,37,69,0.06);padding:8px;border-radius:8px;background:#fff}
+.svg-wrap{margin:12px 0}
+
+
+table.compare{width:100%;border-collapse:collapse;margin:12px 0}
+table.compare th, table.compare td{border:1px solid rgba(11,37,69,0.08);padding:10px;text-align:left}
+table.compare thead th{background:linear-gradient(180deg, rgba(11,37,69,0.06), rgba(11,37,69,0.02))}
+
+
+hr{border:none;border-top:1px solid rgba(11,37,69,0.06);margin:20px 0}
+
+
+.site-footer{margin:28px 0 60px;color:var(--navy);opacity:0.8}
+
+
+.main-card{background:#f5f7fa;border-radius:16px;padding:32px;box-shadow:0 0 18px rgba(0,0,0,0.06);}
+
+
+/* Responsive tweaks */
+@media (max-width:640px){
+.logo-fixed img{width:48px;height:48px}
+.container{padding:18px}
+}
+
+
+/* Accessibility: focus outlines */
+a:focus,button:focus,input:focus{outline:3px solid rgba(11,37,69,0.12);outline-offset:2px}
+
+
+/* Utility classes for authors */
+.note{font-size:0.95rem;background:#f7f7f7;padding:8px;border-radius:6px;border:1px solid rgba(11,37,69,0.03)}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #f9fafb 0%,
+    #eef1f5 100%
+  );
+}
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+color: #00254d;
+background: linear-gradient(135deg, #f9fafb 0%, #eef1f5 100%);
+}
+
+
+.logo-fixa {
+position: fixed;
+top: 10px;
+right: 10px;
+width:  120px;
+z-index: 999;
+}
+
+
+.main-card {
+max-width: 900px;
+margin: 40px auto;
+background: #ffffff;
+padding: 40px;
+border-radius: 16px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.ilustracao {
+margin: 20px 0;
+text-align: center;
+}
+
+
+.tabela-comp {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+
+.tabela-comp th, .tabela-comp td {
+border: 1px solid #c7d1e0;
+padding: 10px;
+text-align: center;
+}
